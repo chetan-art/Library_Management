@@ -1,0 +1,14 @@
+asgiref==3.5.0
+backports.zoneinfo==0.2.1
+certifi==2021.10.8
+Django==4.0.3
+django-crispy-forms==1.13.0
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.1.0
+mysqlclient==2.1.0
+PyJWT==2.3.0
+pytz==2022.1
+sqlparse==0.4.2
+timedelta==2020.12.3
+tzdata==2022.1
+wincertstore==0.2

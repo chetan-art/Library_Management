@@ -1,0 +1,31 @@
+{% extends 'Home.html' %}
+
+{% block body %}
+<div class="container">
+    {%  block head %}
+    <h1 class="text-center">Add Books</h1>
+    {% endblock head %}
+    <form method="post" action="">
+    {% csrf_token %}
+   <div class="mb-3">
+    <label for="Name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="Name" name="Name">
+  </div>
+    <div class="mb-3">
+    <label for="Author_Name" class="form-label">Author Name</label>
+    <input type="text" class="form-control" id="Author_Name" name="Author_Name">
+    </div>
+  <div class="mb-3">
+    <label for="Publish_date" class="form-label">Publish date</label>
+    <input type="date" class="form-control" id="Publish_date" name="Publish_date">
+  </div>
+   <div class="mb-3">
+    <label for="Price" class="form-label"> Price </label>
+    <input type="number" class="form-control" id="Price" name="Price">
+  </div>
+  <button type="submit" class="btn btn-primary">Add Book</button>
+   <a href="{% url 'Details/' %}" class="btn btn-info m-2">Go Back</a>
+
+</form>
+</div>
+{% endblock body%}
